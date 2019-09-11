@@ -5,7 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.LinkedHashMap;
+import java.util.Collections;
 import java.util.List;
 
 @RestController("/conta")
@@ -16,7 +16,7 @@ public class ContaController {
     private ContaService contaService;
 
     @Autowired
-    private ClienteClient clienteClient;
+    private ClienteService clienteService;
 
     @GetMapping("/gerarConta")
     public void gerarConta() {
@@ -24,12 +24,19 @@ public class ContaController {
     }
 
 //    @GetMapping("/listarContas")
-//    public LinkedHashMap listarContas() {
+//    public List listarContas() {
 //        return contaService.readingList();
 //    }
 
     @GetMapping("/listarClientes")
-    public List<ClienteResponse> listarClientes(){
-        return clienteClient.listarClientes();
+    public List<ClienteResponse> listarClientes() {
+        List clientes = null;
+        try {
+            clientes = clienteService.listarClientes();
+        } catch (Exception e) {
+            e.getCause();
+            clientes = Collections.emptyList();
+        }
+        return clientes;
     }
 }

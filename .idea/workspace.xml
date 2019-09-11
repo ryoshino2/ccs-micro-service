@@ -2,54 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9018ec5-da55-4d8a-afe6-49ab64cd9023" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cliente-ccs/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cliente-ccs/.idea/$PRODUCT_WORKSPACE_FILE$" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cliente-ccs/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cliente-ccs/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cliente-ccs/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cliente-ccs/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cliente-ccs/cliente-ccs.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cliente-ccs/clienteccs.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cliente-ccs/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cliente-ccs/src/main/java/br/com/ryoshino/ClienteApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cliente-ccs/src/main/java/br/com/ryoshino/configuration/ConfigurationKafka.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cliente-ccs/src/main/java/br/com/ryoshino/controller/ClienteController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cliente-ccs/src/main/java/br/com/ryoshino/controller/HelloController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cliente-ccs/src/main/java/br/com/ryoshino/entity/Cliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cliente-ccs/src/main/java/br/com/ryoshino/entity/ClienteSerializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cliente-ccs/src/main/java/br/com/ryoshino/repository/ClienteRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cliente-ccs/src/main/java/br/com/ryoshino/service/ClienteService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cliente-ccs/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cliente-ccs/src/test/java/ClienteApplicationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cliente-ccs/src/test/java/br/com/ryoshino/controller/ClienteControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cliente-ccs/src/test/java/br/com/ryoshino/controller/HelloControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cliente-ccs/src/test/java/br/com/ryoshino/service/ClienteServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cliente-ccs/src/test/java/steps/CriarClienteSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cliente-ccs/src/test/java/steps/CriarClienteTeste.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cliente-ccs/src/test/resources/features/cliente.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cliente-ccs/target/classes/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cliente-ccs/target/classes/br/com/ryoshino/ClienteApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cliente-ccs/target/classes/br/com/ryoshino/configuration/ConfigurationKafka.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cliente-ccs/target/classes/br/com/ryoshino/controller/ClienteController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cliente-ccs/target/classes/br/com/ryoshino/controller/HelloController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cliente-ccs/target/classes/br/com/ryoshino/entity/Cliente.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cliente-ccs/target/classes/br/com/ryoshino/entity/ClienteSerializer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cliente-ccs/target/classes/br/com/ryoshino/repository/ClienteRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cliente-ccs/target/classes/br/com/ryoshino/service/ClienteService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cliente-ccs/target/test-classes/ClienteApplicationTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cliente-ccs/target/test-classes/br/com/ryoshino/controller/ClienteControllerTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cliente-ccs/target/test-classes/br/com/ryoshino/controller/HelloControllerTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cliente-ccs/target/test-classes/br/com/ryoshino/service/ClienteServiceTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cliente-ccs/target/test-classes/features/cliente.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cliente-ccs/target/test-classes/steps/CriarClienteSteps.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cliente-ccs/target/test-classes/steps/CriarClienteTeste.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contaclienteccs/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clienteccs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente-ccs/clienteccs.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contaclienteccs/src/main/java/br/com/ryoshino/controller/ClienteClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/contaclienteccs/src/main/java/br/com/ryoshino/controller/ClienteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contaclienteccs/src/main/java/br/com/ryoshino/controller/ContaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/contaclienteccs/src/main/java/br/com/ryoshino/controller/ContaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contaclienteccs/src/main/java/br/com/ryoshino/service/ContaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/contaclienteccs/src/main/java/br/com/ryoshino/service/ContaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contaclienteccs/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/contaclienteccs/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contaclienteccs/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/contaclienteccs/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contaclienteccs/target/classes/br/com/ryoshino/controller/ClienteClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contaclienteccs/target/classes/br/com/ryoshino/controller/ContaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/contaclienteccs/target/classes/br/com/ryoshino/controller/ContaController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contaclienteccs/target/classes/br/com/ryoshino/service/ContaService.class" beforeDir="false" afterPath="$PROJECT_DIR$/contaclienteccs/target/classes/br/com/ryoshino/service/ContaService.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -106,7 +70,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Application">
+  <component name="RunManager" selected="Application.ClienteApplication">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.com.ryoshino.Application" />
       <module name="contaclienteccs" />
@@ -135,8 +99,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Application" />
         <item itemvalue="Application.ClienteApplication" />
+        <item itemvalue="Application.Application" />
       </list>
     </recent_temporary>
   </component>
