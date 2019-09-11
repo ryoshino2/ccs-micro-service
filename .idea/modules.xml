@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/ccs-microservices.iml" filepath="$PROJECT_DIR$/.idea/ccs-microservices.iml" />
       <module fileurl="file://$PROJECT_DIR$/cliente-ccs/cliente-ccs.iml" filepath="$PROJECT_DIR$/cliente-ccs/cliente-ccs.iml" />
       <module fileurl="file://$PROJECT_DIR$/contaclienteccs/contaclienteccs.iml" filepath="$PROJECT_DIR$/contaclienteccs/contaclienteccs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/transacaoccs/transacaoccs.iml" filepath="$PROJECT_DIR$/transacaoccs/transacaoccs.iml" />
     </modules>
   </component>
 </project>

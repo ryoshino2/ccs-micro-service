@@ -1,4 +1,4 @@
-package br.com.ryoshino.controller;
+package br.com.ryoshino.cliente;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;

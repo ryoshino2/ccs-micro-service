@@ -1,7 +1,7 @@
 package br.com.ryoshino.service;
 
-import br.com.ryoshino.controller.ClienteService;
-import br.com.ryoshino.controller.ClienteResponse;
+import br.com.ryoshino.cliente.ClienteResponse;
+import br.com.ryoshino.cliente.ClienteService;
 import br.com.ryoshino.model.Conta;
 import br.com.ryoshino.repository.ContaRepository;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
@@ -55,5 +55,20 @@ public class ContaService {
 
     public List erro() {
         return Collections.emptyList();
+    }
+
+    public Conta buscarConta(Long idConta) {
+        return contaRepository.findByIdConta(idConta);
+    }
+
+    public List<Conta> listarContas() {
+        return contaRepository.findAll();
+    }
+
+    public Conta atualizarConta(Conta conta) {
+        conta.setIdConta(conta.getIdConta());
+        conta.setSaldo(conta.getSaldo());
+        conta.setDataAtualizacao(conta.getDataAtualizacao());
+        return contaRepository.save(conta);
     }
 }

@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="transacaoccs" />
         <module name="cliente-ccs" />
         <module name="contaclienteccs" />
       </profile>
@@ -13,12 +14,14 @@
     <bytecodeTargetLevel>
       <module name="cliente-ccs" target="1.8" />
       <module name="contaclienteccs" target="1.8" />
+      <module name="transacaoccs" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="cliente-ccs" options="-parameters" />
       <module name="contaclienteccs" options="-parameters" />
+      <module name="transacaoccs" options="-parameters" />
     </option>
   </component>
 </project>
