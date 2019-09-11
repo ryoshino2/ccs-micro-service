@@ -1,7 +1,11 @@
 /**/*.iml
 /**/.idea/
-/contaclienteccs/target/
+/contaclienteccs/target/**/
+/cliente-ccs/target/**/
 /cliente-ccs/target/
+/contaclienteccs/target/
+/contaclienteccs/target
+/cliente-ccs/target
 /**/build/
 /**/.gradle/
 /**/out/

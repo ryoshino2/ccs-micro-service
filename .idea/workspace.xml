@@ -3,17 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c9018ec5-da55-4d8a-afe6-49ab64cd9023" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cliente-ccs/clienteccs.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/contaclienteccs/src/main/java/br/com/ryoshino/controller/ClienteClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/contaclienteccs/src/main/java/br/com/ryoshino/controller/ClienteService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contaclienteccs/src/main/java/br/com/ryoshino/controller/ContaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/contaclienteccs/src/main/java/br/com/ryoshino/controller/ContaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contaclienteccs/src/main/java/br/com/ryoshino/service/ContaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/contaclienteccs/src/main/java/br/com/ryoshino/service/ContaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contaclienteccs/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/contaclienteccs/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contaclienteccs/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/contaclienteccs/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contaclienteccs/target/classes/br/com/ryoshino/controller/ClienteClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/contaclienteccs/target/classes/br/com/ryoshino/controller/ContaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/contaclienteccs/target/classes/br/com/ryoshino/controller/ContaController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contaclienteccs/target/classes/br/com/ryoshino/service/ContaService.class" beforeDir="false" afterPath="$PROJECT_DIR$/contaclienteccs/target/classes/br/com/ryoshino/service/ContaService.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
