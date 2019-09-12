@@ -17,9 +17,10 @@ public interface ContaService {
 
     @GetMapping("/buscarConta/{idConta}")
     ContaResponse buscarConta(@PathVariable("idConta") Long idConta);
+//
+//    @GetMapping("/atualizarInformacoes")
+//    ContaResponse atualizarInformaoces();
 
-    @GetMapping("/atualizarInformacoes")
-    ContaResponse atualizarInformaoces();
-
+    @PostMapping("/atualizarInformacoes")
     ContaResponse atualizarConta(@RequestBody ContaResponse contaResponse);
 }

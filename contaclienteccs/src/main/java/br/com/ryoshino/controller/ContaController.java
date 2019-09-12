@@ -56,7 +56,7 @@ public class ContaController {
         return contaService.listarContas();
     }
 
-    @PostMapping
+    @PostMapping("/atualizarInformacoes")
     public Conta criarConta(@RequestBody Conta conta){
         return contaService.atualizarConta(conta);
     }

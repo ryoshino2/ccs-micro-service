@@ -5,6 +5,8 @@ import br.com.ryoshino.conta.ContaService;
 import br.com.ryoshino.service.TransacaoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Collections;
@@ -15,6 +17,9 @@ public class TransacaoController {
 
     @Autowired
     private TransacaoService transacaoService;
+
+    @Autowired
+    private ContaService contaService;
 
     @GetMapping("/listarContas")
     public List<ContaResponse> listarContas() {
@@ -31,5 +36,10 @@ public class TransacaoController {
     @GetMapping("/gerarTransacao")
     public void gerarTransacao() {
         transacaoService.gerarTransacao();
+    }
+
+    @PostMapping("/atualizarInformacoes")
+    public void atualizarInformacoes(@RequestBody ContaResponse contaResponse) {
+        contaService.atualizarConta(contaResponse);
     }
 }
