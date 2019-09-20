@@ -2,8 +2,77 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9018ec5-da55-4d8a-afe6-49ab64cd9023" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_xml_2_9_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_jaxb_annotations_2_9_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_woodstox_woodstox_core_5_0_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_andrewoma_dexx_dexx_collections_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_vlsi_compactmap_compactmap_1_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_inject_guice_4_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_eureka_eureka_client_1_9_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_eureka_eureka_core_1_9_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_netflix_commons_netflix_commons_util_0_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_netflix_commons_netflix_eventbus_0_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_netflix_commons_netflix_infix_0_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_netflix_commons_netflix_statistics_0_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_ribbon_ribbon_2_2_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_ribbon_ribbon_core_2_2_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_ribbon_ribbon_eureka_2_2_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_ribbon_ribbon_httpclient_2_2_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_ribbon_ribbon_loadbalancer_2_2_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_ribbon_ribbon_transport_2_2_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_servo_servo_core_0_12_21.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_contribs_jersey_apache_client4_1_19_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_client_1_19_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_core_1_19_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_server_1_19_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_servlet_1_19_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_thoughtworks_xstream_xstream_1_4_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_jxpath_commons_jxpath_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_reactivex_rxnetty_0_4_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_reactivex_rxnetty_contexts_0_4_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_reactivex_rxnetty_servo_0_4_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_ws_rs_jsr311_api_1_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_stream_stax_api_1_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__joda_time_joda_time_2_9_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_antlr_runtime_3_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_stringtemplate_3_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_math_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jettison_jettison_1_3_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_woodstox_stax2_api_3_1_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_woodstox_woodstox_core_asl_4_4_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_freemarker_freemarker_2_3_28.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_freemarker_2_0_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_eureka_client_2_0_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_eureka_server_2_0_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_eureka_server_2_0_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_ribbon_2_0_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__stax_stax_api_1_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xmlpull_xmlpull_1_1_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xpp3_xpp3_min_1_1_4c.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transacaoccs/src/main/java/br/com/ryoshino/conta/ContaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/transacaoccs/src/main/java/br/com/ryoshino/conta/ContaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente-ccs/cliente-ccs.iml" beforeDir="false" afterPath="$PROJECT_DIR$/cliente-ccs/cliente-ccs.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente-ccs/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cliente-ccs/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente-ccs/src/main/java/br/com/ryoshino/ClienteApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/cliente-ccs/src/main/java/br/com/ryoshino/ClienteApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente-ccs/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/cliente-ccs/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente-ccs/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/cliente-ccs/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente-ccs/target/classes/br/com/ryoshino/ClienteApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/cliente-ccs/target/classes/br/com/ryoshino/ClienteApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contaclienteccs/contaclienteccs.iml" beforeDir="false" afterPath="$PROJECT_DIR$/contaclienteccs/contaclienteccs.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contaclienteccs/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/contaclienteccs/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contaclienteccs/src/main/java/br/com/ryoshino/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/contaclienteccs/src/main/java/br/com/ryoshino/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contaclienteccs/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/contaclienteccs/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contaclienteccs/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/contaclienteccs/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contaclienteccs/target/classes/br/com/ryoshino/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/contaclienteccs/target/classes/br/com/ryoshino/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transacaoccs/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/transacaoccs/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transacaoccs/src/main/java/br/com/ryoshino/ApplicationTransaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/transacaoccs/src/main/java/br/com/ryoshino/ApplicationTransaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transacaoccs/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/transacaoccs/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +137,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ApplicationTransaction">
+  <component name="RunManager" selected="JUnit.ClienteControllerTest.listarClientes">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.com.ryoshino.Application" />
       <module name="contaclienteccs" />
@@ -108,11 +177,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ClienteControllerTest.listarClientes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cliente-ccs" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.ryoshino.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.ryoshino.controller" />
+      <option name="MAIN_CLASS_NAME" value="br.com.ryoshino.controller.ClienteControllerTest" />
+      <option name="METHOD_NAME" value="listarClientes" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ClienteControllerTest.listarClientes" />
         <item itemvalue="Application.Application" />
-        <item itemvalue="Application.ApplicationTransaction" />
         <item itemvalue="Application.ClienteApplication" />
+        <item itemvalue="Application.ApplicationTransaction" />
       </list>
     </recent_temporary>
   </component>

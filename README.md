@@ -15,5 +15,6 @@ Postgresql (outro banco alterar o driver no properties)
 
 Próximos passos:
 Implementar testes unitários,
-Aplicação deverá enviar cada transação como mensagem para algum mensageiro (kafka, rabbit).
+Implementar testes unitários (H2),
+Aplicação deverá enviar cada transação como mensagem para algum mensageiro (kafka, rabbit),
 Configurar banco na AWS.
