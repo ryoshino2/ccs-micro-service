@@ -6,7 +6,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
-import java.io.IOException;
 import java.util.List;
 
 @FeignClient(name = "listarContas", url = "http://localhost:8090")

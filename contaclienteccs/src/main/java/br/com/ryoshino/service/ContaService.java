@@ -4,6 +4,8 @@ import br.com.ryoshino.cliente.ClienteResponse;
 import br.com.ryoshino.cliente.ClienteService;
 import br.com.ryoshino.model.Conta;
 import br.com.ryoshino.repository.ContaRepository;
+import br.com.ryoshino.transacao.TransacaoResponse;
+import br.com.ryoshino.transacao.TransacaoService;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -25,6 +27,9 @@ public class ContaService {
     private ContaRepository contaRepository;
     @Autowired
     private ClienteService clienteService;
+
+    @Autowired
+    private TransacaoService transacaoService;
 
     @Autowired
     private RestTemplate restTemplate;
@@ -65,10 +70,22 @@ public class ContaService {
         return contaRepository.findAll();
     }
 
-    public Conta atualizarConta(Conta conta) {
-        conta.setIdConta(conta.getIdConta());
-        conta.setSaldo(conta.getSaldo());
-        conta.setDataAtualizacao(conta.getDataAtualizacao());
+    public Conta atualizarConta(Long idContaCliente) {
+
+        List<TransacaoResponse> transacoes = transacaoService.listarTransacoes(idContaCliente);
+        Conta conta = contaRepository.findByIdConta(transacoes.get(0).getIdContaCliente());
+        System.out.println(transacoes);
+        System.out.println(conta);
+        for (TransacaoResponse transacao : transacoes) {
+            conta.setIdConta(conta.getIdConta());
+            conta.setSaldo(0.0);
+            if (transacao.getTipoTransacao() == "DEBIT") {
+                conta.setSaldo(conta.getSaldo() - transacao.getValorTransacao());
+            } else {
+                conta.setSaldo(conta.getSaldo() + transacao.getValorTransacao());
+            }
+            conta.setDataAtualizacao(transacao.getDataTransacao());
+        }
         return contaRepository.save(conta);
     }
 }

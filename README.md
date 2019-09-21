@@ -18,3 +18,12 @@ Implementar testes unitários,
 Implementar testes unitários (H2),
 Aplicação deverá enviar cada transação como mensagem para algum mensageiro (kafka, rabbit),
 Configurar banco na AWS.
+
+
+------ 
+
+20/09
+A aplicação está atualizando saldo do cliente, consumindo o endpoint do microserviço de transacao.
+
+PRÓXIMOS PASSOS:
+Refatorar código e criar testes unitários.

@@ -46,4 +46,14 @@ public class ContaResponse {
     public void setDataAtualizacao(LocalDate dataAtualizacao) {
         this.dataAtualizacao = dataAtualizacao;
     }
+
+    @Override
+    public String toString() {
+        return "ContaResponse{" +
+                "idConta=" + idConta +
+                ", idCliente=" + idCliente +
+                ", saldoConta=" + saldoConta +
+                ", dataAtualizacao=" + dataAtualizacao +
+                '}';
+    }
 }

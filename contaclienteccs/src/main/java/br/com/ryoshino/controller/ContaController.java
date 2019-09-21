@@ -5,6 +5,8 @@ import br.com.ryoshino.cliente.ClienteService;
 import br.com.ryoshino.model.Conta;
 import br.com.ryoshino.repository.ContaRepository;
 import br.com.ryoshino.service.ContaService;
+import br.com.ryoshino.transacao.TransacaoResponse;
+import br.com.ryoshino.transacao.TransacaoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -23,6 +25,9 @@ public class ContaController {
 
     @Autowired
     private ClienteService clienteService;
+
+    @Autowired
+    private TransacaoService transacaoService;
 
     @GetMapping("/gerarConta")
     public void gerarConta() {
@@ -56,8 +61,13 @@ public class ContaController {
         return contaService.listarContas();
     }
 
-    @PostMapping("/atualizarInformacoes")
-    public Conta criarConta(@RequestBody Conta conta){
-        return contaService.atualizarConta(conta);
+    @GetMapping("/atualizarInformacoes/{idContaCliente}")
+    public Conta criarConta(@PathVariable("idContaCliente") Long idContaCliente){
+        return contaService.atualizarConta(idContaCliente);
+    }
+
+    @GetMapping("/listarTodasTransacoes")
+    public List<TransacaoResponse> criarConta(){
+        return transacaoService.listarTodasTransacoes();
     }
 }

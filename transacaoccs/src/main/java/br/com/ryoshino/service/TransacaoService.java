@@ -41,12 +41,15 @@ public class TransacaoService {
         return contaClienteList;
     }
 
+    public List<Transacao> listarTransacoesDaConta(long idContaCliente){
+        return transacaoRepository.findByIdContaCliente(idContaCliente);
+    }
 
     private long getIdContaCliente() {
         List<Long> contaReponseList = buscarIdsContaClientes();
         Random gerador = new Random();
         int max = Math.toIntExact(contaReponseList.stream().collect(Collectors.summarizingLong(Long::longValue)).getMax());
-        return max;
+        return 342;
     }
 
 
@@ -76,7 +79,7 @@ public class TransacaoService {
         try {
             DecimalFormat formatter = new DecimalFormat("##,###");
             Random gerador = new Random();
-            transacao = new Transacao(id, Double.valueOf(formatter.format(gerador.nextDouble() * 100)), LocalDate.now(), TipoTransacao.pegarTransacaoAleatoria());
+            transacao = new Transacao(191l, Double.valueOf(formatter.format(gerador.nextDouble() * 100)), LocalDate.now(), TipoTransacao.pegarTransacaoAleatoria());
             salvarTransacao(transacao);
         } catch (NullPointerException e) {
             System.out.println("nao funcionou");
@@ -103,5 +106,9 @@ public class TransacaoService {
 
     public List<Transacao> buscarTransacoes(Long idContaCliente) {
         return transacaoRepository.findByIdContaCliente(idContaCliente);
+    }
+
+    public List<Transacao> buscarTodasTransacoes() {
+        return transacaoRepository.findAll();
     }
 }
