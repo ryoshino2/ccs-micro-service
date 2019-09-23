@@ -27,3 +27,7 @@ A aplicação está atualizando saldo do cliente, consumindo o endpoint do micro
 
 PRÓXIMOS PASSOS:
 Refatorar código e criar testes unitários.
+
+---- 
+Quadro MIRO para acompanhamento de tarefas:
+https://miro.com/app/board/o9J_kw1PIMk=/

@@ -3,23 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c9018ec5-da55-4d8a-afe6-49ab64cd9023" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cliente-ccs/src/main/java/br/com/ryoshino/ClienteApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/cliente-ccs/src/main/java/br/com/ryoshino/ClientApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cliente-ccs/src/test/java/ClienteApplicationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cliente-ccs/src/test/java/ClientApplicationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cliente-ccs/target/classes/br/com/ryoshino/ClienteApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cliente-ccs/target/test-classes/ClienteApplicationTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/contaclienteccs/src/main/java/br/com/ryoshino/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/contaclienteccs/src/main/java/br/com/ryoshino/AccountClientApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contaclienteccs/src/main/java/br/com/ryoshino/controller/ContaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/contaclienteccs/src/main/java/br/com/ryoshino/controller/ContaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contaclienteccs/src/main/java/br/com/ryoshino/service/ContaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/contaclienteccs/src/main/java/br/com/ryoshino/service/ContaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contaclienteccs/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/contaclienteccs/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contaclienteccs/target/classes/br/com/ryoshino/Application.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/contaclienteccs/target/classes/br/com/ryoshino/controller/ContaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/contaclienteccs/target/classes/br/com/ryoshino/controller/ContaController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contaclienteccs/target/classes/br/com/ryoshino/service/ContaService.class" beforeDir="false" afterPath="$PROJECT_DIR$/contaclienteccs/target/classes/br/com/ryoshino/service/ContaService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transacaoccs/src/main/java/br/com/ryoshino/ApplicationTransaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/transacaoccs/src/main/java/br/com/ryoshino/TransactionApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transacaoccs/src/main/java/br/com/ryoshino/conta/ContaResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/transacaoccs/src/main/java/br/com/ryoshino/conta/ContaResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transacaoccs/src/main/java/br/com/ryoshino/conta/ContaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/transacaoccs/src/main/java/br/com/ryoshino/conta/ContaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transacaoccs/src/main/java/br/com/ryoshino/controller/TransacaoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/transacaoccs/src/main/java/br/com/ryoshino/controller/TransacaoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transacaoccs/src/main/java/br/com/ryoshino/entity/Transacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/transacaoccs/src/main/java/br/com/ryoshino/entity/Transacao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transacaoccs/src/main/java/br/com/ryoshino/service/TransacaoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/transacaoccs/src/main/java/br/com/ryoshino/service/TransacaoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -84,7 +68,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.AccountClientApplication">
     <configuration name="AccountClientApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.com.ryoshino.AccountClientApplication" />
       <module name="contaclienteccs" />
