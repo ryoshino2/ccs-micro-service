@@ -6,6 +6,7 @@
     </list>
     <writeAnnotations>
       <writeAnnotation name="org.springframework.beans.factory.annotation.Autowired" />
+      <writeAnnotation name="org.springframework.boot.test.mock.mockito.MockBean" />
     </writeAnnotations>
   </component>
   <component name="MavenProjectsManager">

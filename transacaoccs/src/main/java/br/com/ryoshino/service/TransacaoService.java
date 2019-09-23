@@ -45,7 +45,7 @@ public class TransacaoService {
         List<Long> contaReponseList = buscarIdsContaClientes();
         Random gerador = new Random();
         int max = Math.toIntExact(contaReponseList.stream().collect(Collectors.summarizingLong(Long::longValue)).getMax());
-        return gerador.nextInt(max);
+        return gerador.nextInt(max) + 1;
     }
 
     public Transacao gerarTransacao() {
