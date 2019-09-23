@@ -7,11 +7,12 @@ Java 8
 Spring boot
 Spring data
 Maven
+Rabbit (incluir no projeto)
+Docker (incluir no projeto)
 
 Pré-requisitos para executar a aplicação:
 Java 8 ou superior
 Maven
-Postgresql (outro banco alterar o driver no properties)
 
 Próximos passos:
 Implementar testes unitários,
@@ -19,15 +20,6 @@ Implementar testes unitários (H2),
 Aplicação deverá enviar cada transação como mensagem para algum mensageiro (kafka, rabbit),
 Configurar banco na AWS.
 
-
------- 
-
-20/09
-A aplicação está atualizando saldo do cliente, consumindo o endpoint do microserviço de transacao.
-
-PRÓXIMOS PASSOS:
-Refatorar código e criar testes unitários.
-
----- 
-Quadro MIRO para acompanhamento de tarefas:
+-----------------------------------------------------
+Quadro para acompanhamento de tarefas:
 https://miro.com/app/board/o9J_kw1PIMk=/

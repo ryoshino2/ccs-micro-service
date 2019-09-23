@@ -21,7 +21,7 @@ public class Transacao {
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     private LocalDate dataTransacao;
     private TipoTransacao tipoTransacao;
-
+    private boolean consumirTransacao;
 
     public Transacao() {
     }
@@ -31,6 +31,7 @@ public class Transacao {
         this.valorTransacao = valorTransacao;
         this.dataTransacao = dataTransacao;
         this.tipoTransacao = tipoTransacao;
+        consumirTransacao = true;
     }
 
 
@@ -66,6 +67,14 @@ public class Transacao {
         this.tipoTransacao = tipoTransacao;
     }
 
+
+    public boolean isConsumirTransacao() {
+        return consumirTransacao;
+    }
+
+    public void setConsumirTransacao(boolean consumirTransacao) {
+        this.consumirTransacao = consumirTransacao;
+    }
 
     @Override
     public String toString() {

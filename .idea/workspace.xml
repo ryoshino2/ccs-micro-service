@@ -4,6 +4,8 @@
     <list default="true" id="c9018ec5-da55-4d8a-afe6-49ab64cd9023" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transacaoccs/src/main/java/br/com/ryoshino/entity/Transacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/transacaoccs/src/main/java/br/com/ryoshino/entity/Transacao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transacaoccs/src/main/java/br/com/ryoshino/service/TransacaoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/transacaoccs/src/main/java/br/com/ryoshino/service/TransacaoService.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +70,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.AccountClientApplication">
+  <component name="RunManager" selected="Application.TransactionApplication">
     <configuration name="AccountClientApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.com.ryoshino.AccountClientApplication" />
       <module name="contaclienteccs" />
@@ -127,8 +129,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.TransactionApplication" />
-        <item itemvalue="Application.AccountClientApplication" />
         <item itemvalue="Application.ClientApplication" />
+        <item itemvalue="Application.AccountClientApplication" />
         <item itemvalue="JUnit.ClienteControllerTest.listarClientes" />
       </list>
     </recent_temporary>
@@ -164,16 +166,5 @@
       <path value="$PROJECT_DIR$/cliente-ccs" />
       <path value="$PROJECT_DIR$/clienteccs" />
     </ignored-roots>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/transacaoccs/src/main/java/br/com/ryoshino/service/TransacaoService.java</url>
-          <line>81</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

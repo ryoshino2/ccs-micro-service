@@ -28,10 +28,6 @@ public class TransacaoService {
         return contaService.listarContas();
     }
 
-    private boolean verificarSaldo(ContaResponse contaResponse) {
-        return contaResponse.getSaldoConta() > 0;
-    }
-
     private List<Long> buscarIdsContaClientes() {
         List<Long> contaClienteList = new ArrayList<>();
 
@@ -41,7 +37,7 @@ public class TransacaoService {
         return contaClienteList;
     }
 
-    public List<Transacao> listarTransacoesDaConta(long idContaCliente){
+    public List<Transacao> listarTransacoesDaConta(long idContaCliente) {
         return transacaoRepository.findByIdContaCliente(idContaCliente);
     }
 
@@ -49,7 +45,7 @@ public class TransacaoService {
         List<Long> contaReponseList = buscarIdsContaClientes();
         Random gerador = new Random();
         int max = Math.toIntExact(contaReponseList.stream().collect(Collectors.summarizingLong(Long::longValue)).getMax());
-        return 342;
+        return gerador.nextInt(max);
     }
 
 
@@ -59,8 +55,7 @@ public class TransacaoService {
         //Consumir do servico de Conta
         ContaResponse contaResponse = contaService.buscarConta(transacao.getIdContaCliente());
         saldo = efetuarTransacao(transacao, contaResponse, saldo);
-        atualizarSaldoContaCliente(getIdContaCliente(), transacao, saldo);
-//        atualizarDataDeMovimentacaoCliente(contaResponse.getIdCliente(), transacao);
+//        atualizarSaldoContaCliente(getIdContaCliente(), transacao, saldo);
     }
 
 
@@ -79,7 +74,7 @@ public class TransacaoService {
         try {
             DecimalFormat formatter = new DecimalFormat("##,###");
             Random gerador = new Random();
-            transacao = new Transacao(191l, Double.valueOf(formatter.format(gerador.nextDouble() * 100)), LocalDate.now(), TipoTransacao.pegarTransacaoAleatoria());
+            transacao = new Transacao(id, Double.valueOf(formatter.format(gerador.nextDouble() * 100)), LocalDate.now(), TipoTransacao.pegarTransacaoAleatoria());
             salvarTransacao(transacao);
         } catch (NullPointerException e) {
             System.out.println("nao funcionou");
@@ -91,18 +86,12 @@ public class TransacaoService {
         transacaoRepository.save(transacao);
     }
 
-//    public void atualizarDataDeMovimentacaoCliente(Long id, Transacao transacao) {
-//        Cliente cliente = clienteRepository.findByIdCliente(id);
-//        cliente.setDataAtualizacao(transacao.getDataTransacao());
-//        clienteRepository.save(cliente);
+//    public void atualizarSaldoContaCliente(Long id, Transacao transacao, Double saldo) {
+//        ContaResponse contaResponse = contaService.buscarConta(id);
+//        contaResponse.setDataAtualizacao(transacao.getDataTransacao());
+//        contaResponse.setSaldoConta(saldo);
+//        contaService.atualizarConta(contaResponse);
 //    }
-
-    public void atualizarSaldoContaCliente(Long id, Transacao transacao, Double saldo) {
-        ContaResponse contaResponse = contaService.buscarConta(id);
-        contaResponse.setDataAtualizacao(transacao.getDataTransacao());
-        contaResponse.setSaldoConta(saldo);
-        contaService.atualizarConta(contaResponse);
-    }
 
     public List<Transacao> buscarTransacoes(Long idContaCliente) {
         return transacaoRepository.findByIdContaCliente(idContaCliente);
