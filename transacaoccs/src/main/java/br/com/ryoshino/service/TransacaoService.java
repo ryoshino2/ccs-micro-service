@@ -41,6 +41,10 @@ public class TransacaoService {
         return transacaoRepository.findByIdContaCliente(idContaCliente);
     }
 
+    public List<Transacao> listarTransacoesParaConsumir(Long idContaCliente){
+        return transacaoRepository.findByConsumirTransacaoAndIdContaCliente(true, idContaCliente);
+    }
+
     private long getIdContaCliente() {
         List<Long> contaReponseList = buscarIdsContaClientes();
         Random gerador = new Random();
@@ -99,5 +103,11 @@ public class TransacaoService {
 
     public List<Transacao> buscarTodasTransacoes() {
         return transacaoRepository.findAll();
+    }
+
+    public void alterarStatusTransacao(Long idTransacao) {
+        Transacao transacao = transacaoRepository.findByIdTransacao(idTransacao);
+        transacao.setConsumirTransacao(false);
+        transacaoRepository.save(transacao);
     }
 }

@@ -30,8 +30,13 @@ public interface TransacaoService {
     @GetMapping(value = "/listarTransacoes/{idContaCliente}")
     List<TransacaoResponse> listarTransacoes(@PathVariable("idContaCliente") Long idContaCliente);
 
+    @GetMapping(value = "/listarTransacoesParaConsumir/{idContaCliente}")
+    List<TransacaoResponse> listarTransacoesParaConsumir(@PathVariable("idContaCliente") Long idContaCliente);
+
 
     @GetMapping(value = "/listarTransacoes")
     List<TransacaoResponse> listarTodasTransacoes();
 
+    @GetMapping(value = "/alterarStatusTransacao/{idTransacao}")
+    void alterarStatusTransacao(@PathVariable("idTransacao") Long idTransacao);
 }

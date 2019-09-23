@@ -29,6 +29,7 @@ public class TransacaoResponse {
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     private LocalDate dataTransacao;
     private String tipoTransacao;
+    private boolean consumirTransacao;
 
     public Long getIdTransacao() {
         return idTransacao;
@@ -79,5 +80,13 @@ public class TransacaoResponse {
                 ", dataTransacao=" + dataTransacao +
                 ", tipoTransacao='" + tipoTransacao + '\'' +
                 '}';
+    }
+
+    public boolean isConsumirTransacao() {
+        return consumirTransacao;
+    }
+
+    public void setConsumirTransacao(boolean consumirTransacao) {
+        this.consumirTransacao = consumirTransacao;
     }
 }
