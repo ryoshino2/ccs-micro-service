@@ -37,11 +37,7 @@ public class TransacaoService {
         return contaClienteList;
     }
 
-    public List<Transacao> listarTransacoesDaConta(long idContaCliente) {
-        return transacaoRepository.findByIdContaCliente(idContaCliente);
-    }
-
-    public List<Transacao> listarTransacoesParaConsumir(Long idContaCliente){
+    public List<Transacao> listarTransacoesParaConsumir(Long idContaCliente) {
         return transacaoRepository.findByConsumirTransacaoAndIdContaCliente(true, idContaCliente);
     }
 
@@ -50,26 +46,6 @@ public class TransacaoService {
         Random gerador = new Random();
         int max = Math.toIntExact(contaReponseList.stream().collect(Collectors.summarizingLong(Long::longValue)).getMax());
         return gerador.nextInt(max);
-    }
-
-
-    public void atualizarSaldo() {
-        Double saldo = null;
-        Transacao transacao = gerarTransacao();
-        //Consumir do servico de Conta
-        ContaResponse contaResponse = contaService.buscarConta(transacao.getIdContaCliente());
-        saldo = efetuarTransacao(transacao, contaResponse, saldo);
-//        atualizarSaldoContaCliente(getIdContaCliente(), transacao, saldo);
-    }
-
-
-    private Double efetuarTransacao(Transacao transacao, ContaResponse contaResponse, Double saldo) {
-        if (transacao.getTipoTransacao() == TipoTransacao.CREDIT) {
-            saldo = contaResponse.getSaldoConta() + transacao.getValorTransacao();
-        } else if (transacao.getTipoTransacao() == TipoTransacao.DEBIT) {
-            saldo = contaResponse.getSaldoConta() - transacao.getValorTransacao();
-        }
-        return saldo;
     }
 
     public Transacao gerarTransacao() {
@@ -81,7 +57,7 @@ public class TransacaoService {
             transacao = new Transacao(id, Double.valueOf(formatter.format(gerador.nextDouble() * 100)), LocalDate.now(), TipoTransacao.pegarTransacaoAleatoria());
             salvarTransacao(transacao);
         } catch (NullPointerException e) {
-            System.out.println("nao funcionou");
+            e.getStackTrace();
         }
         return transacao;
     }
@@ -90,14 +66,7 @@ public class TransacaoService {
         transacaoRepository.save(transacao);
     }
 
-//    public void atualizarSaldoContaCliente(Long id, Transacao transacao, Double saldo) {
-//        ContaResponse contaResponse = contaService.buscarConta(id);
-//        contaResponse.setDataAtualizacao(transacao.getDataTransacao());
-//        contaResponse.setSaldoConta(saldo);
-//        contaService.atualizarConta(contaResponse);
-//    }
-
-    public List<Transacao> buscarTransacoes(Long idContaCliente) {
+    public List<Transacao> buscarTransacoesDoCliente(Long idContaCliente) {
         return transacaoRepository.findByIdContaCliente(idContaCliente);
     }
 
@@ -106,8 +75,12 @@ public class TransacaoService {
     }
 
     public void alterarStatusTransacao(Long idTransacao) {
-        Transacao transacao = transacaoRepository.findByIdTransacao(idTransacao);
+        Transacao transacao = buscarTransacaoPeloId(idTransacao);
         transacao.setConsumirTransacao(false);
-        transacaoRepository.save(transacao);
+        salvarTransacao(transacao);
+    }
+
+    private Transacao buscarTransacaoPeloId(Long idTransacao) {
+        return transacaoRepository.findByIdTransacao(idTransacao);
     }
 }

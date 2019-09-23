@@ -37,7 +37,7 @@ public class TransacaoController {
 
     @GetMapping("/listarTransacoes/{idContaCliente}")
     public List<Transacao> listarTransacoesDaConta(@PathVariable ("idContaCliente") Long idContaCliente){
-        return transacaoService.buscarTransacoes(idContaCliente);
+        return transacaoService.buscarTransacoesDoCliente(idContaCliente);
     }
 
     @GetMapping("/listarTransacoesParaConsumir/{idContaCliente}")

@@ -13,6 +13,7 @@
 /**/.gradle/
 /**/out/
 /**/.kotlintest/
+.idea/workspace.xml
 .settings
 .classpath
 .project
