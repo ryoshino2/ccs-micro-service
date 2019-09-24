@@ -74,10 +74,11 @@ public class TransacaoService {
         return transacaoRepository.findAll();
     }
 
-    public void alterarStatusTransacao(Long idTransacao) {
+    public Transacao alterarStatusTransacao(Long idTransacao) {
         Transacao transacao = buscarTransacaoPeloId(idTransacao);
         transacao.setConsumirTransacao(false);
         salvarTransacao(transacao);
+        return transacao;
     }
 
     private Transacao buscarTransacaoPeloId(Long idTransacao) {

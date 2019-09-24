@@ -17,6 +17,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.Assert.*;
+import static org.mockito.ArgumentMatchers.isNotNull;
 import static org.mockito.Mockito.when;
 
 /**
@@ -45,23 +46,16 @@ public class TransacaoServiceTest {
         contaResponse.setSaldoConta(0.0);
         listaConta.add(contaResponse);
         when(contaService.listarContas()).thenReturn(listaConta);
-
-    }
-
-
-    @Test
-    public void testListarContas() {
+        transacao = transacaoService.gerarTransacao();
     }
 
     @Test
     public void testListarTransacoesParaConsumir() {
-        transacao = transacaoService.gerarTransacao();
         assertTrue(transacao.isConsumirTransacao());
     }
 
     @Test
     public void testGerarTransacao() {
-        transacao = transacaoService.gerarTransacao();
         assertNotNull(transacao);
         assertEquals(transacao.getDataTransacao(), LocalDate.now());
         assertEquals(transacao.getIdContaCliente(), contaResponse.getIdConta());
@@ -70,13 +64,18 @@ public class TransacaoServiceTest {
 
     @Test
     public void testBuscarTransacoesDoCliente() {
+        List<Transacao> transacaoList = transacaoService.buscarTransacoesDoCliente(contaResponse.getIdConta());
+        assertNotEquals(0, transacaoList.size());
     }
 
     @Test
     public void testBuscarTodasTransacoes() {
+        assertEquals(1, transacaoService.buscarTodasTransacoes().size());
     }
 
     @Test
     public void testAlterarStatusTransacao() {
+        transacao = transacaoService.alterarStatusTransacao(transacao.getIdTransacao());
+        assertFalse(transacao.isConsumirTransacao());
     }
 }
