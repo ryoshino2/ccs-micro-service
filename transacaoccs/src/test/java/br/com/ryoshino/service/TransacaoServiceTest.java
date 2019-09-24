@@ -3,7 +3,6 @@ package br.com.ryoshino.service;
 import br.com.ryoshino.conta.ContaResponse;
 import br.com.ryoshino.conta.ContaService;
 import br.com.ryoshino.entity.Transacao;
-import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -17,7 +16,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.Assert.*;
-import static org.mockito.ArgumentMatchers.isNotNull;
 import static org.mockito.Mockito.when;
 
 /**
