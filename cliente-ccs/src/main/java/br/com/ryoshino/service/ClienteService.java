@@ -18,7 +18,7 @@ import java.util.Random;
 @EnableScheduling
 public class ClienteService {
     //288 clientes por dia
-//    private final long GERAR_CLIENTES = (5000 * 60);
+    private final long GERAR_CLIENTES = (5000 * 60);
     private final ConfigurationKafka kafkaProperties = new ConfigurationKafka();
 
     @Autowired
@@ -32,7 +32,7 @@ public class ClienteService {
         clienteRepository.save(cliente);
     }
 
-//    @Scheduled(fixedDelay = GERAR_CLIENTES)
+    @Scheduled(fixedDelay = GERAR_CLIENTES)
     public void gerarCliente() {
         Random gerador = new Random();
 
@@ -44,16 +44,6 @@ public class ClienteService {
         cliente.setNome("nome: " + gerador.nextInt(100));
         cliente.setTelefone(gerador.nextInt(10000) + 1);
         salvarCliente(cliente);
-
-        System.out.println(cliente);
-
-        KafkaProducer<String, Cliente> producer = new KafkaProducer<>(kafkaProperties.configurationKafka());
-        ProducerRecord<String, Cliente> record;
-        record = new ProducerRecord<>("cliente_ccs", cliente);
-        producer.send(record);
-        producer.flush();
-        producer.close();
-
     }
 
     public void enviarParaOKafka() {

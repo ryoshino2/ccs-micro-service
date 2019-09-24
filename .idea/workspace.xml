@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9018ec5-da55-4d8a-afe6-49ab64cd9023" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/transacaoccs/src/test/java/br/com/ryoshino/service/TransacaoServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/transacaoccs/src/test/java/br/com/ryoshino/service/TransacaoServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente-ccs/src/main/java/br/com/ryoshino/service/ClienteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cliente-ccs/src/main/java/br/com/ryoshino/service/ClienteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contaclienteccs/src/main/java/br/com/ryoshino/service/ContaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/contaclienteccs/src/main/java/br/com/ryoshino/service/ContaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contaclienteccs/target/classes/br/com/ryoshino/service/ContaService.class" beforeDir="false" afterPath="$PROJECT_DIR$/contaclienteccs/target/classes/br/com/ryoshino/service/ContaService.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +42,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="br.com.ryoshino.service.TransacaoService" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../lista-vip-teste-integracao" />
     <property name="project.structure.last.edited" value="Project" />
@@ -49,23 +52,23 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="br.com.ryoshino" />
       <recent name="br.com.ryoshino.service" />
+      <recent name="br.com.ryoshino" />
       <recent name="br.com.ryoshino.controller" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="br.com.ryoshino.entity" />
+      <recent name="br.com.ryoshino.enum" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+      <recent name="br.com.ryoshino.service.TransacaoService" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/transacaoccs/src/main/java/br/com/ryoshino/conta" />
       <recent name="$PROJECT_DIR$/transacaoccs" />
       <recent name="$PROJECT_DIR$/cliente-ccs" />
       <recent name="$PROJECT_DIR$/contaclienteccs" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="br.com.ryoshino.service.TransacaoService" />
-      <recent name="" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="br.com.ryoshino.entity" />
-      <recent name="br.com.ryoshino.enum" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -80,7 +83,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TransacaoServiceTest">
+  <component name="RunManager" selected="JUnit.ContaServiceTest.atualizarConta">
+    <configuration name="ContaServiceTest.atualizarConta" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="contaclienteccs" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.ryoshino.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.ryoshino.service" />
+      <option name="MAIN_CLASS_NAME" value="br.com.ryoshino.service.ContaServiceTest" />
+      <option name="METHOD_NAME" value="atualizarConta" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TransacaoServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="transacaoccs" />
       <extension name="coverage">
@@ -107,22 +126,6 @@
       <option name="PACKAGE_NAME" value="br.com.ryoshino.service" />
       <option name="MAIN_CLASS_NAME" value="br.com.ryoshino.service.TransacaoServiceTest" />
       <option name="METHOD_NAME" value="testAlterarStatusTransacao" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TransacaoServiceTest.testGerarTransacao" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="transacaoccs" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="br.com.ryoshino.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="br.com.ryoshino.service" />
-      <option name="MAIN_CLASS_NAME" value="br.com.ryoshino.service.TransacaoServiceTest" />
-      <option name="METHOD_NAME" value="testGerarTransacao" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -161,11 +164,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ContaServiceTest.atualizarConta" />
         <item itemvalue="JUnit.TransacaoServiceTest" />
         <item itemvalue="JUnit.TransacaoServiceTest.testAlterarStatusTransacao" />
         <item itemvalue="JUnit.TransacaoServiceTest.testListarTransacoesParaConsumir" />
         <item itemvalue="JUnit.TransactionApplicationTest" />
-        <item itemvalue="JUnit.TransacaoServiceTest.testGerarTransacao" />
       </list>
     </recent_temporary>
   </component>

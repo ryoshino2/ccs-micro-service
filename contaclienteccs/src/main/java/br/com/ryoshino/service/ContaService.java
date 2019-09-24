@@ -58,7 +58,7 @@ public class ContaService {
 
     public void atualizarConta(Long idContaCliente) {
         List<TransacaoResponse> transacoes = getTransacaoResponse(idContaCliente);
-        Conta conta = contaRepository.findByIdConta(transacoes.get(0).getIdContaCliente());
+        Conta conta = buscarConta(idContaCliente);
         for (TransacaoResponse transacao : transacoes) {
             atualiazarInformacoesDaConta(conta, transacao);
             contaRepository.save(conta);
@@ -84,5 +84,9 @@ public class ContaService {
 
     private List<TransacaoResponse> getTransacaoResponse(Long idContaCliente) {
         return transacaoService.listarTransacoesParaConsumir(idContaCliente);
+    }
+
+    public void salvarConta(Conta conta) {
+        contaRepository.save(conta);
     }
 }
