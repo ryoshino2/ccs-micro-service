@@ -2,6 +2,7 @@ package br.com.ryoshino.service;
 
 import br.com.ryoshino.cliente.ClienteService;
 import br.com.ryoshino.model.Conta;
+import br.com.ryoshino.repository.ContaRepository;
 import br.com.ryoshino.transacao.TransacaoResponse;
 import br.com.ryoshino.transacao.TransacaoService;
 import org.apache.tomcat.jni.Local;
@@ -11,6 +12,7 @@ import org.mockito.Mock;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.jmx.export.annotation.ManagedOperation;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.time.LocalDate;
@@ -19,6 +21,8 @@ import java.util.Collections;
 import java.util.List;
 
 import static org.junit.Assert.*;
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.ArgumentMatchers.anyLong;
 import static org.mockito.Mockito.when;
 
 /**
@@ -36,13 +40,11 @@ public class ContaServiceTest {
     private TransacaoService transacaoService;
 
     @MockBean
-    private ClienteService clienteService;
-
+    private ContaRepository contaRepository;
 
     @Test
     public void atualizarConta() {
         Conta conta = new Conta(1L, 0.0, LocalDate.now());
-        contaService.salvarConta(conta);
 
         List<TransacaoResponse> transacoes = new ArrayList<>();
         TransacaoResponse transacao = new TransacaoResponse();
@@ -56,7 +58,10 @@ public class ContaServiceTest {
 
         transacoes.add(transacao);
 
-        when(transacaoService.listarTransacoesParaConsumir(conta.getIdConta())).thenReturn(transacoes);
+        when(transacaoService.listarTransacoesParaConsumir(any())).thenReturn(transacoes);
+        when(contaRepository.findByIdConta(1L)).thenReturn(conta);
         contaService.atualizarConta(1L);
+        assertEquals(LocalDate.now(), conta.getDataAtualizacao());
+        assertEquals(10.0, conta.getSaldo(), 0.0);
     }
 }

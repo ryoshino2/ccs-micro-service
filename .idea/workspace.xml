@@ -3,9 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="c9018ec5-da55-4d8a-afe6-49ab64cd9023" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cliente-ccs/src/main/java/br/com/ryoshino/service/ClienteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cliente-ccs/src/main/java/br/com/ryoshino/service/ClienteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contaclienteccs/contaclienteccs.iml" beforeDir="false" afterPath="$PROJECT_DIR$/contaclienteccs/contaclienteccs.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contaclienteccs/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/contaclienteccs/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contaclienteccs/src/main/java/br/com/ryoshino/service/ContaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/contaclienteccs/src/main/java/br/com/ryoshino/service/ContaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contaclienteccs/target/classes/br/com/ryoshino/service/ContaService.class" beforeDir="false" afterPath="$PROJECT_DIR$/contaclienteccs/target/classes/br/com/ryoshino/service/ContaService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contaclienteccs/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/contaclienteccs/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contaclienteccs/src/test/java/br/com/ryoshino/service/ContaServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/contaclienteccs/src/test/java/br/com/ryoshino/service/ContaServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transacaoccs/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/transacaoccs/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -203,5 +206,39 @@
       <path value="$PROJECT_DIR$/cliente-ccs" />
       <path value="$PROJECT_DIR$/clienteccs" />
     </ignored-roots>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/contaclienteccs/src/main/java/br/com/ryoshino/service/ContaService.java</url>
+          <line>58</line>
+          <properties class="br.com.ryoshino.service.ContaService" method="atualizarConta">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/contaclienteccs/src/main/java/br/com/ryoshino/service/ContaService.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/contaclienteccs/src/main/java/br/com/ryoshino/service/ContaService.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/contaclienteccs/src/main/java/br/com/ryoshino/service/ContaService.java</url>
+          <line>85</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/contaclienteccs/src/test/java/br/com/ryoshino/service/ContaServiceTest.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
