@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c9018ec5-da55-4d8a-afe6-49ab64cd9023" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contaclienteccs/contaclienteccs.iml" beforeDir="false" afterPath="$PROJECT_DIR$/contaclienteccs/contaclienteccs.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contaclienteccs/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/contaclienteccs/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contaclienteccs/src/main/java/br/com/ryoshino/service/ContaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/contaclienteccs/src/main/java/br/com/ryoshino/service/ContaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contaclienteccs/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/contaclienteccs/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contaclienteccs/src/test/java/br/com/ryoshino/service/ContaServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/contaclienteccs/src/test/java/br/com/ryoshino/service/ContaServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transacaoccs/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/transacaoccs/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -86,7 +81,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ContaServiceTest.atualizarConta">
+  <component name="RunManager" selected="JUnit.ContaServiceTest">
+    <configuration name="ContaServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="contaclienteccs" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.ryoshino.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.ryoshino.service" />
+      <option name="MAIN_CLASS_NAME" value="br.com.ryoshino.service.ContaServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ContaServiceTest.atualizarConta" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="contaclienteccs" />
       <extension name="coverage">
@@ -150,28 +160,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TransactionApplicationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="transacaoccs" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="br.com.ryoshino.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="br.com.ryoshino" />
-      <option name="MAIN_CLASS_NAME" value="br.com.ryoshino.TransactionApplicationTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ContaServiceTest" />
         <item itemvalue="JUnit.ContaServiceTest.atualizarConta" />
         <item itemvalue="JUnit.TransacaoServiceTest" />
         <item itemvalue="JUnit.TransacaoServiceTest.testAlterarStatusTransacao" />
         <item itemvalue="JUnit.TransacaoServiceTest.testListarTransacoesParaConsumir" />
-        <item itemvalue="JUnit.TransactionApplicationTest" />
       </list>
     </recent_temporary>
   </component>
@@ -206,39 +201,5 @@
       <path value="$PROJECT_DIR$/cliente-ccs" />
       <path value="$PROJECT_DIR$/clienteccs" />
     </ignored-roots>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/contaclienteccs/src/main/java/br/com/ryoshino/service/ContaService.java</url>
-          <line>58</line>
-          <properties class="br.com.ryoshino.service.ContaService" method="atualizarConta">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/contaclienteccs/src/main/java/br/com/ryoshino/service/ContaService.java</url>
-          <line>59</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/contaclienteccs/src/main/java/br/com/ryoshino/service/ContaService.java</url>
-          <line>60</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/contaclienteccs/src/main/java/br/com/ryoshino/service/ContaService.java</url>
-          <line>85</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/contaclienteccs/src/test/java/br/com/ryoshino/service/ContaServiceTest.java</url>
-          <line>63</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

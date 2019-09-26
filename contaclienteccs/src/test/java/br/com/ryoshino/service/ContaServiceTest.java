@@ -1,28 +1,22 @@
 package br.com.ryoshino.service;
 
-import br.com.ryoshino.cliente.ClienteService;
 import br.com.ryoshino.model.Conta;
 import br.com.ryoshino.repository.ContaRepository;
 import br.com.ryoshino.transacao.TransacaoResponse;
 import br.com.ryoshino.transacao.TransacaoService;
-import org.apache.tomcat.jni.Local;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.mockito.Mock;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
-import org.springframework.jmx.export.annotation.ManagedOperation;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.ArgumentMatchers.anyLong;
 import static org.mockito.Mockito.when;
 
 /**
