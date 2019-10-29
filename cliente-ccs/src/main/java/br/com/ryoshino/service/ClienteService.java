@@ -1,10 +1,17 @@
 package br.com.ryoshino.service;
 
 import br.com.ryoshino.configuration.ConfigurationKafka;
+import br.com.ryoshino.configuration.RabbitConfig;
 import br.com.ryoshino.entity.Cliente;
 import br.com.ryoshino.repository.ClienteRepository;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerRecord;
+import org.springframework.amqp.core.Message;
+import org.springframework.amqp.core.MessageBuilder;
+import org.springframework.amqp.core.MessageProperties;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
@@ -23,6 +30,13 @@ public class ClienteService {
 
     @Autowired
     private ClienteRepository clienteRepository;
+
+    @Autowired
+    private RabbitTemplate rabbitTemplate;
+
+    @Autowired
+    private ObjectMapper objectMapper;
+
 
     public List<Cliente> listarClientes() {
         return clienteRepository.findAll();
@@ -62,6 +76,19 @@ public class ClienteService {
         producer.flush();
         // flush and close producer
         producer.close();
+    }
+
+    public void enviarClienteParaRabbit(Cliente cliente) {
+        try {
+            String clienteJson = objectMapper.writeValueAsString(cliente);
+            Message message = MessageBuilder
+                    .withBody(clienteJson.getBytes())
+                    .setContentType(MessageProperties.CONTENT_TYPE_JSON)
+                    .build();
+            this.rabbitTemplate.convertAndSend(RabbitConfig.CLIENTECCS_QUEUE, cliente);
+        } catch (JsonProcessingException e) {
+            e.printStackTrace();
+        }
     }
 
 }

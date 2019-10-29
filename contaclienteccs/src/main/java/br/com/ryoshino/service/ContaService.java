@@ -46,8 +46,6 @@ public class ContaService {
             contaRepository.save(conta);
         }
     }
-
-
     public Conta buscarConta(Long idConta) {
         return contaRepository.findByIdConta(idConta);
     }
